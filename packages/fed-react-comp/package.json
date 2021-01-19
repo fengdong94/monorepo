@@ -1,6 +1,6 @@
 {
   "name": "fed-react-comp",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A react components library",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -21,7 +21,7 @@
   "dependencies": {
     "antd": "^4.10.2",
     "classnames": "^2.2.6",
-    "fed-utils": "^1.1.0"
+    "fed-utils": "^1.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
