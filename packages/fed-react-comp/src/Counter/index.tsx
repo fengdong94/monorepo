@@ -15,6 +15,7 @@ const Counter: React.FC<Props> = ({ name }) => {
 
   const handleDecrement = () => {
     const vsd = 'cxx'
+    console.log('sd')
     setCount((count) => count + 1)
   }
   const handleIncrement = () => {
