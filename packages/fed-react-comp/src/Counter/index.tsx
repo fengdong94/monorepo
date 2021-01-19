@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button } from 'antd'
 import 'antd/es/button/style/index.css'
+import { add5 } from 'fed-utils'
 
 import CustomButton from './CustomButton'
 import './index.scss'
@@ -9,16 +10,19 @@ interface Props {
   name: string
 }
 
-// console.log(add(2, 2))
 const Counter: React.FC<Props> = ({ name }) => {
   const [count, setCount] = useState(10)
 
   const handleDecrement = () => {
-    setCount((count) => count + 1)
+    setCount(() => count - 1)
   }
   const handleIncrement = () => {
-    setCount((count) => count - 1)
+    setCount((count) => count + 1)
   }
+
+  useEffect(() => {
+    console.log(add5(count))
+  }, [count])
 
   return (
     <div className='counter-container'>
