@@ -12,15 +12,6 @@
     "format": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "lint": "eslint . --ext '.js,.jsx,.ts,.tsx'"
   },
-  "keywords": [
-    "utils"
-  ],
-  "author": "Fred",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fengdong94/fed-utils/issues"
-  },
-  "homepage": "https://github.com/fengdong94/fed-utils#readme",
   "devDependencies": {
     "typescript": "^4.1.3"
   }
