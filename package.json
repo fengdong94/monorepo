@@ -4,6 +4,9 @@
   "workspaces": {
     "packages": ["packages/*"]
   },
+  "scripts": {
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

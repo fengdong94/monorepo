@@ -12,7 +12,6 @@
   "author": "Fred",
   "license": "ISC",
   "scripts": {
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "build": "rimraf lib es && rollup -c",
     "test": "jest",
     "test:watch": "jest --watch",
