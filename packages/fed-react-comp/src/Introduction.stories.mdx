@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# 快速上手
+
+## 安装
+```linux
+yarn add fed-react-comp
+```
+
+## 使用
+### es6 module
+```js
+import { Counter, Button } from 'fed-react-comp'
+import Counter from 'fed-react-comp/es/Counter'
+import Button from 'fed-react-comp/es/Button'
+```
+
+### commonJS
+```js
+const { Counter, Button } = require('fed-react-comp')
+const Counter = require('fed-react-comp/lib/Counter').default
+const Button = require('fed-react-comp/lib/Button').default
+```

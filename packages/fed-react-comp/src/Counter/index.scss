@@ -1,0 +1,15 @@
+.counter-container {
+  display: flex;
+  align-items: center;
+  img {
+    width: 50px;
+  }
+  .ant-btn {
+    background: #cdd;
+    color: #000;
+  }
+  .counter-content {
+    width: 80px;
+    text-align: center;
+  }
+}
