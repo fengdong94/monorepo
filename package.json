@@ -2,7 +2,9 @@
   "name": "root",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": [
+      "packages/*"
+    ]
   },
   "scripts": {
     "lint": "eslint '*/**/*.{js,ts,tsx}' --fix"
@@ -18,16 +20,18 @@
     ]
   },
   "devDependencies": {
-    "lerna": "^3.22.1",
+    "rimraf": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
-    "husky": "^4.3.7",
-    "lint-staged": "^10.5.3",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+    "husky": "^4.3.7",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
   }
 }
