@@ -1,5 +1,6 @@
 import React from 'react'
 import Counter from '.'
+import './index.scss'
 
 export default { title: 'Counter' }
 

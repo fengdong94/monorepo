@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '.'
+import './index.scss'
 
 const Template = (args) => <Button {...args}></Button>
 
