@@ -8,6 +8,10 @@
     "lib",
     "es"
   ],
+  "sideEffects": [
+    "*.scss.js",
+    "*.css.js"
+  ],
   "keywords": [],
   "author": "Fred",
   "license": "ISC",
