@@ -1,6 +1,6 @@
 {
   "name": "fed-react-comp",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A react components library",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -8,10 +8,7 @@
     "lib",
     "es"
   ],
-  "sideEffects": [
-    "*.scss.js",
-    "*.css.js"
-  ],
+  "sideEffects": false,
   "keywords": [],
   "author": "Fred",
   "license": "ISC",
@@ -23,7 +20,8 @@
   "dependencies": {
     "antd": "^4.10.2",
     "classnames": "^2.2.6",
-    "fed-utils": "^1.1.1"
+    "fed-utils": "^1.1.1",
+    "react-impression": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -37,12 +35,11 @@
     "@types/react-dom": "^17.0.0",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
-    "node-sass": "^5.0.0",
-    "postcss": "^8.2.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rollup": "^2.33.3",
-    "rollup-plugin-postcss": "^4.0.0",
+    "node-sass": "^5.0.0",
+    "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-typescript2": "^0.29.0",
     "sass-loader": "^10.1.1"
   },

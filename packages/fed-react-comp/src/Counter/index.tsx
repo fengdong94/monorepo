@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Button } from 'antd'
-import 'antd/es/button/style/index.css'
 import { add5 } from 'fed-utils'
 
 import CustomButton from './CustomButton'
-import './index.scss'
 import reactImg from './react.jpg'
 interface Props {
   name: string

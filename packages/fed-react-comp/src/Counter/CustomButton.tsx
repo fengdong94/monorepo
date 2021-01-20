@@ -1,5 +1,4 @@
 import React from 'react'
-import './CustomButton.scss'
 
 interface Props {
   text: string

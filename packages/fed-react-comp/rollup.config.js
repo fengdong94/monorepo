@@ -1,8 +1,8 @@
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
-import postcss from 'rollup-plugin-postcss'
 import image from '@rollup/plugin-image'
+import copy from 'rollup-plugin-copy'
 import pkg from './package.json'
 
 export default {
@@ -29,5 +29,19 @@ export default {
     ...Object.keys(pkg.dependencies),
     ...Object.keys(pkg.peerDependencies),
   ],
-  plugins: [resolve(), commonjs(), typescript(), postcss(), image()],
+  plugins: [
+    resolve(),
+    commonjs(),
+    typescript(),
+    image(),
+    copy({
+      targets: [
+        {
+          src: 'src/**/*.scss',
+          dest: 'dist',
+        },
+      ],
+      flatten: false,
+    }),
+  ],
 }

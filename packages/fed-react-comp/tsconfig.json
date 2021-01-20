@@ -15,6 +15,7 @@
     "node_modules",
     "lib",
     "es",
+    "dist",
     "src/**/*.stories.tsx",
     "src/**/*.test.tsx"
   ]
