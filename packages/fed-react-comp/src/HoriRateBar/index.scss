@@ -1,0 +1,53 @@
+.hori-rate-bar-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: hori-rate-bar-text-show 2.5s;
+  &-label {
+    font-family: PingFangSC-Regular, PingFang SC;
+  }
+  &-rate {
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+  }
+}
+
+.hori-rate-bar-block {
+  display: flex;
+  &-left {
+    height: 100%;
+    &-animation {
+      height: 100%;
+      animation: hori-rate-bar-left-extend 1s;
+    }
+  }
+  &-right {
+    height: 100%;
+    animation: 1.5s hori-rate-bar-right-extend 1s forwards;
+  }
+}
+
+@keyframes hori-rate-bar-text-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hori-rate-bar-left-extend {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes hori-rate-bar-right-extend {
+  0% {
+    flex: 0;
+  }
+  100% {
+    flex: 1;
+  }
+}
